@@ -1,0 +1,385 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jms-basic 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ jms-basic ---
+[INFO] Deleting /home/baptiste/eclipse-workspace/jms-basic/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jms-basic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jms-basic ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/baptiste/eclipse-workspace/jms-basic/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jms-basic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jms-basic ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/baptiste/eclipse-workspace/jms-basic/target/test-classes
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:unpack (unpack) @ jms-basic ---
+[INFO] Configured Artifact: org.wildfly:wildfly-dist:8.2.1.Final:zip
+[INFO] Unpacking /home/baptiste/.m2/repository/org/wildfly/wildfly-dist/8.2.1.Final/wildfly-dist-8.2.1.Final.zip to /home/baptiste/eclipse-workspace/jms-basic/target with includes "" and excludes ""
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ jms-basic ---
+[INFO] Surefire report directory: /home/baptiste/eclipse-workspace/jms-basic/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.javaee7.jms.basic.sync.JmsSyncTest
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+16:31:18,140 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+16:31:18,244 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+16:31:18,287 INFO  [org.jboss.as] (MSC service thread 1-8) JBAS015899: WildFly 8.2.1.Final "Tweek" starting
+16:31:18,946 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+16:31:18,958 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.3.0.Final
+16:31:18,963 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.3.0.Final
+16:31:18,981 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.7.Final
+16:31:19,001 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+16:31:19,018 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+16:31:19,035 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+16:31:19,040 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+16:31:19,053 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+16:31:19,069 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+16:31:19,074 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+16:31:19,079 INFO  [org.jboss.as.security] (MSC service thread 1-7) JBAS013170: Current PicketBox version=4.0.21.Final
+16:31:19,098 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+16:31:19,114 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010417: Started Driver service with driver-name = h2
+16:31:19,140 INFO  [org.jboss.as.naming] (MSC service thread 1-1) JBAS011802: Starting Naming Service
+16:31:19,140 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) JBAS015400: Bound mail session [java:jboss/mail/Default]
+16:31:19,140 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+16:31:19,172 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017502: Undertow 1.1.8.Final starting
+16:31:19,174 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.8.Final starting
+16:31:19,273 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path /home/baptiste/eclipse-workspace/jms-basic/target/wildfly-8.2.1.Final/welcome-content
+16:31:19,277 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017525: Started server default-server.
+16:31:19,388 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017531: Host default-host starting
+16:31:19,437 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017519: Undertow HTTP listener default listening on /127.0.0.1:8080
+16:31:19,508 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory /home/baptiste/eclipse-workspace/jms-basic/target/wildfly-8.2.1.Final/standalone/deployments
+16:31:19,555 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+16:31:19,645 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+16:31:19,677 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+16:31:19,678 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+16:31:19,678 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.1.Final "Tweek" started in 1719ms - Started 184 of 234 services (82 services are lazy, passive or on-demand)
+16:31:20,419 INFO  [org.jboss.as.repository] (management-handler-thread - 2) JBAS014900: Content added at location /home/baptiste/eclipse-workspace/jms-basic/target/wildfly-8.2.1.Final/standalone/data/content/36/2ee2f41e688b86a2994e1d50842e0d6777b662/content
+16:31:20,429 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "a507dd14-b494-4360-88dd-fbcefd4d4dd3.war" (runtime-name: "a507dd14-b494-4360-88dd-fbcefd4d4dd3.war")
+16:31:20,633 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016002: Processing weld deployment a507dd14-b494-4360-88dd-fbcefd4d4dd3.war
+16:31:20,672 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.1.3.Final
+16:31:20,722 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-2) JNDI bindings for session bean named MessageSenderSync in deployment unit deployment "a507dd14-b494-4360-88dd-fbcefd4d4dd3.war" are as follows:
+
+	java:global/a507dd14-b494-4360-88dd-fbcefd4d4dd3/MessageSenderSync!org.javaee7.jms.basic.sync.MessageSenderSync
+	java:app/a507dd14-b494-4360-88dd-fbcefd4d4dd3/MessageSenderSync!org.javaee7.jms.basic.sync.MessageSenderSync
+	java:module/MessageSenderSync!org.javaee7.jms.basic.sync.MessageSenderSync
+	java:global/a507dd14-b494-4360-88dd-fbcefd4d4dd3/MessageSenderSync
+	java:app/a507dd14-b494-4360-88dd-fbcefd4d4dd3/MessageSenderSync
+	java:module/MessageSenderSync
+
+16:31:20,723 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-2) JNDI bindings for session bean named MessageReceiverSync in deployment unit deployment "a507dd14-b494-4360-88dd-fbcefd4d4dd3.war" are as follows:
+
+	java:global/a507dd14-b494-4360-88dd-fbcefd4d4dd3/MessageReceiverSync!org.javaee7.jms.basic.sync.MessageReceiverSync
+	java:app/a507dd14-b494-4360-88dd-fbcefd4d4dd3/MessageReceiverSync!org.javaee7.jms.basic.sync.MessageReceiverSync
+	java:module/MessageReceiverSync!org.javaee7.jms.basic.sync.MessageReceiverSync
+	java:global/a507dd14-b494-4360-88dd-fbcefd4d4dd3/MessageReceiverSync
+	java:app/a507dd14-b494-4360-88dd-fbcefd4d4dd3/MessageReceiverSync
+	java:module/MessageReceiverSync
+
+16:31:20,807 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016005: Starting Services for CDI deployment: a507dd14-b494-4360-88dd-fbcefd4d4dd3.war
+16:31:20,826 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 2.2.6 (Final)
+16:31:20,845 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016008: Starting weld service for deployment a507dd14-b494-4360-88dd-fbcefd4d4dd3.war
+16:31:20,935 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 2) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "a507dd14-b494-4360-88dd-fbcefd4d4dd3.war")]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => [
+    "jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env.\"org.javaee7.jms.basic.sync.MessageReceiverSync\".myQueue is missing [jboss.naming.context.java.app.a507dd14-b494-4360-88dd-fbcefd4d4dd3.jms.mySyncContainerQueue]",
+    "jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env.\"org.javaee7.jms.basic.sync.MessageSenderSync\".syncQueue is missing [jboss.naming.context.java.app.a507dd14-b494-4360-88dd-fbcefd4d4dd3.jms.mySyncContainerQueue]"
+]}
+16:31:20,936 ERROR [org.jboss.as.server] (management-handler-thread - 2) JBAS015870: Deploy of deployment "a507dd14-b494-4360-88dd-fbcefd4d4dd3.war" was rolled back with the following failure message: 
+{"JBAS014771: Services with missing/unavailable dependencies" => [
+    "jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env.\"org.javaee7.jms.basic.sync.MessageReceiverSync\".myQueue is missing [jboss.naming.context.java.app.a507dd14-b494-4360-88dd-fbcefd4d4dd3.jms.mySyncContainerQueue]",
+    "jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env.\"org.javaee7.jms.basic.sync.MessageSenderSync\".syncQueue is missing [jboss.naming.context.java.app.a507dd14-b494-4360-88dd-fbcefd4d4dd3.jms.mySyncContainerQueue]"
+]}
+16:31:20,939 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016009: Stopping weld service for deployment a507dd14-b494-4360-88dd-fbcefd4d4dd3.war
+16:31:20,964 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment a507dd14-b494-4360-88dd-fbcefd4d4dd3.war (runtime-name: a507dd14-b494-4360-88dd-fbcefd4d4dd3.war) in 28ms
+16:31:20,967 INFO  [org.jboss.as.controller] (management-handler-thread - 2) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".WeldInstantiator, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.WeldInstantiator, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.WeldInterceptorBindingsService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, JBAS014799: ... and 12 more ] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".WeldInstantiator, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.WeldInstantiator, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.WeldInterceptorBindingsService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, JBAS014799: ... and 10 more ] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.CREATE (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.VIEW."org.javaee7.jms.basic.sync.MessageReceiverSync".LOCAL (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.WeldInstantiator] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.CREATE (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.VIEW."org.javaee7.jms.basic.sync.MessageSenderSync".LOCAL (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.WeldInstantiator] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".CREATE (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".CREATE (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldInitialListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".ee.ComponentRegistry (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.START, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".START, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".START, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.START, JBAS014799: ... and 7 more ] 
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".moduleDeploymentRuntimeInformation (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.START, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.START, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.naming.context.java.app.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.app.a507dd14-b494-4360-88dd-fbcefd4d4dd3.jms.mySyncContainerQueue (missing) dependents: [service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env."org.javaee7.jms.basic.sync.MessageReceiverSync".myQueue, service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env."org.javaee7.jms.basic.sync.MessageSenderSync".syncQueue] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.BeanManager (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.DefaultContextService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.DefaultDataSource (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.DefaultManagedExecutorService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.DefaultManagedScheduledExecutorService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.DefaultManagedThreadFactory (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.EJBContext (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.TimerService (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.TransactionSynchronizationRegistry (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.UserTransaction (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env."org.javaee7.jms.basic.sync.MessageReceiverSync".myQueue (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.START, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env."org.javaee7.jms.basic.sync.MessageSenderSync".syncQueue (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService, service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.START] 
+      service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3 (missing) dependents: [service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3] 
+      service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService] 
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.407 sec <<< FAILURE!
+org.javaee7.jms.basic.sync.JmsSyncTest  Time elapsed: 3.406 sec  <<< ERROR!
+org.jboss.arquillian.container.spi.client.container.DeploymentException: Cannot deploy: a507dd14-b494-4360-88dd-fbcefd4d4dd3.war
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:83)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:64)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deploy(ArchiveDeployer.java:46)
+	at org.jboss.as.arquillian.container.CommonDeployableContainer.deploy(CommonDeployableContainer.java:146)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:151)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:118)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:239)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deploy(ContainerDeployController.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.container.impl.client.container.DeploymentExceptionHandler.verifyExpectedExceptionDuringDeploy(DeploymentExceptionHandler.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:92)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:77)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:232)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachManagedDeployment(ContainerDeployController.java:212)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deployManaged(ContainerDeployController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.beforeClass(EventTestRunnerAdaptor.java:89)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:163)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:350)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:177)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:115)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.Exception: {"JBAS014771: Services with missing/unavailable dependencies" => [
+    "jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env.\"org.javaee7.jms.basic.sync.MessageReceiverSync\".myQueue is missing [jboss.naming.context.java.app.a507dd14-b494-4360-88dd-fbcefd4d4dd3.jms.mySyncContainerQueue]",
+    "jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env.\"org.javaee7.jms.basic.sync.MessageSenderSync\".syncQueue is missing [jboss.naming.context.java.app.a507dd14-b494-4360-88dd-fbcefd4d4dd3.jms.mySyncContainerQueue]"
+]}
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.getActionResult(ServerDeploymentPlanResultFuture.java:134)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.getResultFromNode(ServerDeploymentPlanResultFuture.java:123)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.get(ServerDeploymentPlanResultFuture.java:85)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.get(ServerDeploymentPlanResultFuture.java:42)
+	at org.jboss.as.controller.client.helpers.standalone.ServerDeploymentHelper.deploy(ServerDeploymentHelper.java:55)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:77)
+	... 96 more
+
+16:31:21,032 INFO  [org.jboss.as.controller] (management-handler-thread - 4) JBAS014774: Service status report
+JBAS014776:    Newly corrected services:
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".WeldBootstrapService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".WeldStartService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.CREATE (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.JndiBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.START (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.VIEW."org.javaee7.jms.basic.sync.MessageReceiverSync".LOCAL (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.WeldInstantiator (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.WeldInterceptorBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageReceiverSync.ejb.non-functional-timerservice (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.CREATE (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.JndiBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.START (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.VIEW."org.javaee7.jms.basic.sync.MessageSenderSync".LOCAL (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.WeldInstantiator (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.WeldInterceptorBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component.MessageSenderSync.ejb.non-functional-timerservice (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".CREATE (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".JndiBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".START (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".CREATE (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".JndiBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".START (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".JndiBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".CREATE (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".JndiBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".WeldInstantiator (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldInitialListener".JndiBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldInitialListener".START (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".JndiBindingsService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".ee.ComponentRegistry (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".jndiDependencyService (no longer required)
+      service jboss.deployment.unit."a507dd14-b494-4360-88dd-fbcefd4d4dd3.war".moduleDeploymentRuntimeInformation (no longer required)
+      service jboss.naming.context.java.app.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env (no longer required)
+      service jboss.naming.context.java.app.a507dd14-b494-4360-88dd-fbcefd4d4dd3.jms.mySyncContainerQueue (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.BeanManager (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.DefaultContextService (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.DefaultDataSource (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.DefaultManagedExecutorService (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.DefaultManagedScheduledExecutorService (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.DefaultManagedThreadFactory (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.EJBContext (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.TimerService (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.TransactionSynchronizationRegistry (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.UserTransaction (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env."org.javaee7.jms.basic.sync.MessageReceiverSync".myQueue (no longer required)
+      service jboss.naming.context.java.module.a507dd14-b494-4360-88dd-fbcefd4d4dd3.a507dd14-b494-4360-88dd-fbcefd4d4dd3.env."org.javaee7.jms.basic.sync.MessageSenderSync".syncQueue (no longer required)
+      service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3 (no longer required)
+      service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.UndertowDeploymentInfoService (no longer required)
+      service jboss.undertow.deployment.default-server.default-host./a507dd14-b494-4360-88dd-fbcefd4d4dd3.codec (no longer required)
+
+16:31:21,043 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017532: Host default-host stopping
+16:31:21,046 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010418: Stopped Driver service with driver-name = h2
+16:31:21,045 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017521: Undertow HTTP listener default suspending
+16:31:21,050 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017520: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8080
+16:31:21,042 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+16:31:21,051 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017506: Undertow 1.1.8.Final stopping
+16:31:21,061 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015950: WildFly 8.2.1.Final "Tweek" stopped in 22ms
+
+Results :
+
+Tests in error: 
+  org.javaee7.jms.basic.sync.JmsSyncTest: Cannot deploy: a507dd14-b494-4360-88dd-fbcefd4d4dd3.war
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.001 s
+[INFO] Finished at: 2018-04-07T16:31:21+02:00
+[INFO] Final Memory: 36M/379M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project jms-basic: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/baptiste/eclipse-workspace/jms-basic/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
