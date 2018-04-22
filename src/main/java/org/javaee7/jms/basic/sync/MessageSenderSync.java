@@ -1,4 +1,4 @@
-package org.javaee7.jms.basic.simple;
+package org.javaee7.jms.basic.sync;
 
 import javax.annotation.Resource;
 import javax.ejb.Startup;

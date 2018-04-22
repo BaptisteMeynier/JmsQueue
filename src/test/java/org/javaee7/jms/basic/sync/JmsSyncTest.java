@@ -2,23 +2,23 @@ package org.javaee7.jms.basic.sync;
 
 import static org.junit.Assert.assertEquals;
 
-import java.io.File;
-import java.net.URL;
+
 import java.util.concurrent.TimeoutException;
 
 import javax.ejb.EJB;
+import javax.jms.JMSException;
 import javax.jms.JMSRuntimeException;
 
 import org.javaee7.jms.basic.JmsResources;
-import org.javaee7.jms.basic.simple.MessageReceiverSync;
-import org.javaee7.jms.basic.simple.MessageSenderSync;
-import org.javaee7.jms.basic.utils.CliUtils;
+import org.javaee7.jms.basic.classic.ClassicMessageReceiver;
+import org.javaee7.jms.basic.classic.ClassicMessageSender;
+import org.javaee7.jms.basic.sync.MessageReceiverSync;
+import org.javaee7.jms.basic.sync.MessageSenderSync;
+import org.javaee7.jms.basic.sync.appmanaged.MessageReceiverAppManaged;
+import org.javaee7.jms.basic.sync.appmanaged.MessageSenderAppManaged;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.arquillian.junit.InSequence;
-import org.jboss.arquillian.test.api.ArquillianResource;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,35 +27,35 @@ import org.junit.runner.RunWith;
 public class JmsSyncTest {
 
 
-	/* @EJB
-	    ClassicMessageSender classicSender;
+	@EJB
+	ClassicMessageSender classicSender;
 
-	    @EJB
-	    ClassicMessageReceiver classicReceiver;*/
+	@EJB
+	ClassicMessageReceiver classicReceiver;
 
 	@EJB
 	MessageSenderSync simpleSender;
 
 	@EJB
 	MessageReceiverSync simpleReceiver;
-	/*
-	    @EJB
-	    MessageSenderAppManaged appManagedSender;
 
-	    @EJB
-	    MessageReceiverAppManaged appManagedReceiver;
-	 */    
+	@EJB
+	MessageSenderAppManaged appManagedSender;
+
+	@EJB
+	MessageReceiverAppManaged appManagedReceiver;
+
 	private final int messageReceiveTimeoutInMillis = 10000;
 
-	/*
-	    @Test
-	    public void testClassicApi() throws JMSException, TimeoutException {
-	        String message = "The test message over JMS 1.1 API";
-	        classicSender.sendMessage(message);
 
-	        assertEquals(message, classicReceiver.receiveMessage(messageReceiveTimeoutInMillis));
-	    }
-	 */
+	@Test
+	public void testClassicApi() throws JMSException, TimeoutException {
+		String message = "The test message over JMS 1.1 API";
+		classicSender.sendMessage(message);
+
+		assertEquals(message, classicReceiver.receiveMessage(messageReceiveTimeoutInMillis));
+	}
+
 	@Test
 	public void testContainerManagedJmsContext() throws JMSRuntimeException, TimeoutException {
 		String message = "Test message over container-managed JMSContext";
@@ -63,15 +63,15 @@ public class JmsSyncTest {
 
 		assertEquals(message, simpleReceiver.receiveMessage(messageReceiveTimeoutInMillis));
 	}
-	/*
-	    @Test
-	    public void testAppManagedJmsContext() throws JMSRuntimeException, TimeoutException {
-	        String message = "The test message over app-managed JMSContext";
-	        appManagedSender.sendMessage(message);
 
-	        assertEquals(message, appManagedReceiver.receiveMessage(messageReceiveTimeoutInMillis));
-	    }
-	 */
+	@Test
+	public void testAppManagedJmsContext() throws JMSRuntimeException, TimeoutException {
+		String message = "The test message over app-managed JMSContext";
+		appManagedSender.sendMessage(message);
+
+		assertEquals(message, appManagedReceiver.receiveMessage(messageReceiveTimeoutInMillis));
+	}
+
 	@Test
 	public void testMultipleSendAndReceive() throws JMSRuntimeException, TimeoutException {
 		simpleSender.sendMessage("1");
@@ -91,12 +91,10 @@ public class JmsSyncTest {
 		return ShrinkWrap.create(WebArchive.class)
 				.addClasses(MessageSenderSync.class,
 						MessageReceiverSync.class,
-						/*ClassicMessageSender.class,
-	                ClassicMessageReceiver.class,
-	                MessageSenderAppManaged.class,
-	                MessageReceiverAppManaged.class,*/
+						ClassicMessageSender.class,
+						ClassicMessageReceiver.class,
+						MessageSenderAppManaged.class,
+						MessageReceiverAppManaged.class,
 						JmsResources.class);
-		/*.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml")
-	            .addAsWebInfResource("hornetq-jms.xml");*/
 	}
 }

@@ -1,4 +1,4 @@
-package org.javaee7.jms.basic.simple;
+package org.javaee7.jms.basic.async;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,7 +19,6 @@ import org.javaee7.jms.basic.JmsResources;
 /**
  * Asynchronous message sending is not supported in Java EE 7.
  *
- * @author Arun Gupta
  */
 @Stateless
 public class MessageSenderAsync {
