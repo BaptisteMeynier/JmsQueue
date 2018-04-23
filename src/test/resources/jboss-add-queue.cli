@@ -1,1 +1,0 @@
-/subsystem=messaging/hornetq-server=default/jms-queue=MySyncContainerQueue:add(entries=[java:app/jms/mySyncContainerQueue])
