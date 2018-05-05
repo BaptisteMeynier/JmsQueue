@@ -26,7 +26,9 @@ public class ReceptionSynchronizer {
     @AroundInvoke
     public Object invoke(final InvocationContext ctx) throws Exception {
         boolean transactional = false;
+    	System.out.println("PLOUFFF");
         try {
+
             System.out.println("Intercepting " + ctx.getMethod().toGenericString());
             transactional = txRegistry != null && txRegistry.getTransactionStatus() != Status.STATUS_NO_TRANSACTION;
             if (transactional) {

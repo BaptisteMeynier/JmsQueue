@@ -15,17 +15,18 @@ import javax.jms.TextMessage;
  * A message driven bean with newly standardized activation config properties.
  *
  */
-@MessageDriven(activationConfig = {
-    @ActivationConfigProperty(propertyName = "destinationLookup",
-            propertyValue = JmsResources.ASYNC_QUEUE),
-    @ActivationConfigProperty(propertyName = "destinationType",
-            propertyValue = "javax.jms.Queue"),})
+@MessageDriven(name = "MDBExample", activationConfig = {
+    @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "app/jms/myAsyncQueue"),
+    @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
+    @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge")})
 public class MessageReceiverAsync implements MessageListener {
 
     @Override
     public void onMessage(Message message) {
+        System.out.println("PLOUF");
         try {
             TextMessage tm = (TextMessage) message;
+
             System.out.println("Message received (async): " + tm.getText());
         } catch (JMSException ex) {
             Logger.getLogger(MessageReceiverAsync.class.getName()).log(Level.SEVERE, null, ex);

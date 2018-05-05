@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.jms.CompletionListener;
+import javax.jms.JMSConnectionFactory;
 import javax.jms.JMSContext;
 import javax.jms.JMSException;
 import javax.jms.JMSProducer;
@@ -24,14 +25,14 @@ import org.javaee7.jms.basic.JmsResources;
 public class MessageSenderAsync {
 
     @Inject
-    //    @JMSConnectionFactory("java:comp/DefaultJMSConnectionFactory")
+     //   @JMSConnectionFactory("java:comp/DefaultJMSConnectionFactory")
     JMSContext context;
 
     @Resource(lookup = JmsResources.ASYNC_QUEUE)
     Queue asyncQueue;
 
     /**
-     * Send a message to the JMS queue. Prin
+     * Send a message to the JMS queue.
      *
      * @param message the contents of the message.
      * @throws JMSRuntimeException if an error occurs in accessing the queue.
